@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Pont-Château Hand-Ball</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+		<!-- Styles -->
+
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300;400;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+
+		<!-- Îcones -->
+
+		<script src="https://kit.fontawesome.com/50b4ed0339.js" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+
+		<!------------------------------ HEADER ------------------------------->
+		
+		<header>
+			<nav>
+			    <div class="container">
+			        <div class="d-flex align-items-center justify-content-between ">
+			            <div class="nav_logo">
+			                <a href="/"><img src="images/logo.png"></a>
+			            </div>
+
+					            <!-- <button class="navbar-toggler menu-burger" id="menu-burger">
+					                <div class="menu-burger__wrapper">
+					                    <div class="menu-burger__item">&nbsp;</div>
+					                    <div class="menu-burger__item">&nbsp;</div>
+					                    <div class="menu-burger__item">&nbsp;</div>
+					                </div>
+					            </button> -->
+
+			            <div class="d-none d-md-block">
+			                <div class="nav_link dropdown">
+			                	<p data-toggle="dropdown">Plannings</p> 
+			                	<div class="dropdown-menu">
+      								<a class="dropdown-item" href="#">Plannings des Matchs</a>
+      								<a class="dropdown-item" href="#">Plannings des Entraînements</a>
+							    </div>
+			                </div>
+			                <a class="nav_link" href="#">Résultats</a>
+			                <div class="nav_link dropdown">
+			                	<p data-toggle="dropdown">Vie du Club</p> 
+			                	<div class="dropdown-menu">
+      								<a class="dropdown-item" href="#">Actualités du Club</a>
+      								<a class="dropdown-item" href="#">Organigramme</a>
+      								<a class="dropdown-item" href="#">Historique</a>
+      								<a class="dropdown-item" href="#">Inscriptions</a>
+      								<a class="dropdown-item" href="#">Presse</a>
+      							</div>
+			                </div>
+			            </div>
+
+			            <div class="d-none d-md-block ml-auto">
+			                <div class="nav_link nav_link_gold dropdown" href="#">
+			                	<p data-toggle="dropdown">Équipes</p> 
+			                	<div class="dropdown-menu">
+			                		<a class="dropdown-item" href="#">Handfit</a>
+			                		<a class="dropdown-item" href="#">Loisir</a>
+			                		<a class="dropdown-item" href="#">Baby Hand</a>
+			                		<a class="dropdown-item" href="#">École de Hand</a>
+      								<a class="dropdown-item" href="#">- 10 M</a>
+      								<a class="dropdown-item" href="#">- 12 M</a>
+      								<a class="dropdown-item" href="#">- 14 M</a>
+      								<a class="dropdown-item" href="#">- 14 F</a>
+      								<a class="dropdown-item" href="#">- 16 M</a>
+      								<a class="dropdown-item" href="#">- 16 F</a>
+      								<a class="dropdown-item" href="#">- 19 M</a>
+      								<a class="dropdown-item" href="#">Senior M</a>
+      							</div>
+			                </div>
+
+			                <a class="nav_link" href="#">Évenement</a>
+			                <a class="nav_link" href="#">Contact</a>
+			            </div>
+			        </div>
+			    </div>
+			</nav>
+
+			<!------------------- CAROUSEL HEADER ------------------->
+
+			<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item carousel-item_accueil active" data-interval="5000" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(images/image1.jpg)">
+						<div class="container titre_box">
+							<div class="titre_style titre_position">
+								<span>Pontchateau</span>
+								<span>Handball</span>
+							</div>
+							<div class="titre_style pchb">
+								<span>pchb</span>
+							</div>
+							<a href="#contact" class="btn btn-ghost btn_titre">Calendrier</a>	
+				    	</div>
+					</div>
+					<div class="carousel-item carousel-item_accueil" data-interval="5000" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(images/image2.jpg)">
+						<div class="container titre_box">
+							<div class="titre_style titre_position">
+								<span>Pontchateau</span>
+								<span>Handball</span>
+							</div>
+							<div class="titre_style pchb">
+								<span>pchb</span>
+							</div>
+							<a href="#contact" class="btn btn-ghost btn_titre">Calendrier</a>	
+				    	</div>
+					</div>
+					<div class="carousel-item carousel-item_accueil" data-interval="5000" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(images/image3.jpg)">
+						<div class="container titre_box">
+							<div class="titre_style titre_position">
+								<span>Pontchateau</span>
+								<span>Handball</span>
+							</div>
+							<div class="titre_style pchb">
+								<span>pchb</span>
+							</div>
+							<a href="#contact" class="btn btn-ghost btn_titre">Calendrier</a>	
+				    	</div>
+					</div>
+				</div>
+				<a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+					<span class="sr-only">Previous</span>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+				<a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+					<span class="sr-only">Previous</span>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a>
+			</div>
+		</header>
+
+		<!------------------------------ FACEBOOK SECTION ------------------------------->
+
+		<section>
+			<div class="container background_match">
+				<div class="row">
+					<div class="col-lg-6">
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpontchateau.handball%2F&tabs=timeline&width=500&height=1150&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="500" height="1150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+					</div>
+
+					<!------------------- CAROUSEL PROCHAINS MATCH  ET CLASSEMENT ------------------->
+
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-lg-12 padding_match">
+								<div class="titre_h2">
+									<h2>Prochains Match</h2>
+								</div>
+								<div id="CarouselMatch" class="carousel slide carousel-fade" data-ride="carousel">
+									<!--<ol class="carousel-indicators">
+										<li data-target="#CarouselMatch" data-slide-to="0" class="active"></li>
+										<li data-target="#CarouselMatch" data-slide-to="1"></li>
+										<li data-target="#CarouselMatch" data-slide-to="2"></li>
+									</ol>-->
+									<div class="carousel-inner carousel_match_box">
+										<div class="carousel-item carousel_match active" data-interval="9999999999999999">
+											<div class="prochains_match">
+												<div class="date_match">
+													<p>15 Juin</p>
+													<p>20h45</p>
+											    </div>
+											    <div class="titre_match">
+											    	<p>Trignac</p>
+											    	<p>VS</p>
+											    	<p>PCHB</p>
+											    </div>
+											    <a class="info_match" href="#">INFO</a>
+										    </div>
+										</div>
+										<div class="carousel-item carousel_match" data-interval="9999999999999999">
+											<div class="prochains_match">
+												<div class="date_match">
+													<p>16 Octo</p>
+													<p>20h45</p>
+												</div>
+												<div class="titre_match">
+												    <p>Savenay</p>
+												    <p>VS</p>
+												    <p>PCHB</p>
+												</div>
+												<a class="info_match" href="#">INFO</a>
+											</div>
+										</div>
+										<div class="carousel-item carousel_match" data-interval="9999999999999999">
+											<div class="prochains_match">
+												<div class="date_match">
+													<p>12 Janv</p>
+													<p>20h45</p>
+												</div>
+												<div class="titre_match">
+												    <p>PCHB</p>
+												    <p>VS</p>
+												    <p>RACC</p>
+											    </div>
+											    <a class="info_match" href="#">INFO</a>
+											</div>
+										</div>
+									</div>
+									<a href="#CarouselMatch" class="btn_prev_match carousel-control-prev" role="button" data-slide="prev">
+										<span class="sr-only">Previous</span>
+										<i class="fas fa-angle-left" aria-hidden="true"></i>
+									</a>
+									<a href="#CarouselMatch" class="btn_next_match carousel-control-next" role="button" data-slide="next">
+										<span class="sr-only">Next</span>
+										<i class="fas fa-angle-right" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="row classement_box">
+							<div class="col-lg-12 padding_match">
+								<div class="titre_h2">
+									<h2>Classement</h2>
+								</div>
+								<div id="CarouselClassement" class="carousel slide carousel-fade" data-ride="carousel">
+									<!--<ol class="carousel-indicators">
+										<li data-target="#CarouselMatch" data-slide-to="0" class="active"></li>
+										<li data-target="#CarouselMatch" data-slide-to="1"></li>
+										<li data-target="#CarouselMatch" data-slide-to="2"></li>
+									</ol>-->
+									<div class="carousel-inner carousel_match_box">
+										<div class="carousel-item carousel_match active" data-interval="9999999999999999">
+											<div class="prochains_match">
+												<div class="date_match">
+													<p>- 19 M</p>
+													<p>Poule B</p>
+											    </div>
+											    <div class="titre_match">
+											    	<p>Ici techniquement il a un classement</p>
+											    </div>
+										    </div>
+										</div>
+										<div class="carousel-item carousel_match" data-interval="9999999999999999">
+											<div class="prochains_match">
+												<div class="date_match">
+													<p>Senior M</p>
+													<p>1er DTM</p>
+												</div>
+												<div class="titre_match">
+												    <p>Ici techniquement il a un classement</p>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item carousel_match" data-interval="9999999999999999">
+											<div class="prochains_match">
+												<div class="date_match">
+													<p>- 16 F</p>
+													<p>blabla</p>
+												</div>
+												<div class="titre_match">
+												    <p>Ici techniquement il a un classement</p>
+											    </div>
+											</div>
+										</div>
+									</div>
+									<a href="#CarouselClassement" class="btn_prev_match carousel-control-prev" role="button" data-slide="prev">
+										<span class="sr-only">Previous</span>
+										<i class="fas fa-angle-left" aria-hidden="true"></i>
+									</a>
+									<a href="#CarouselClassement" class="btn_next_match carousel-control-next" role="button" data-slide="next">
+										<span class="sr-only">Next</span>
+										<i class="fas fa-angle-right" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!------------------------------ COMMUNAUTÉ ------------------------------->
+
+		<section class="section_communaute">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-12">
+								<h2>La Communauté</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quo, iste natus quos exercitationem quod molestiae ab quae non, vitae quasi, modi est illum, assumenda. Excepturi doloremque delectus doloribus, laudantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ea officiis laudantium perspiciatis et a eveniet repellat error totam nulla maxime voluptatibus, quam in reprehenderit earum nihil voluptatem nostrum, facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam animi veniam numquam, porro blanditiis, laborum corrupti. Asperiores, eos dolore quaerat, soluta nesciunt consectetur porro nostrum eum odio eius beatae cupiditate.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 inscrire_center">
+								<div class="btn_inscrire">
+									<a href="#inscriptions" class="btn btn-ghost">S'inscrire</a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<h3>Rejoignez-nous sur les réseaux !</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 icone_reseaux">
+								<a href="https://www.facebook.com/pontchateau.handball/"><i class="fab fa-facebook"></i></a>
+								<a href="https://www.instagram.com/pont_chateau_handball/?hl=fr"><i class="fab fa-instagram"></i></a>
+								<a href="https://www.youtube.com/channel/UCr4XuEzFS4fMU_hoG-CW8kA"><i class="fab fa-youtube"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!------------------------------ COMMUNAUTÉ ------------------------------->
+
+		<section class="actualites">
+			<div class="container">
+				<h2>Actualités</h2>
+				<div class="row">
+					<div class="col-lg-12 actualites_accueil_un">
+						<div class="row">
+							<div class="col-lg-8"></div>
+							<div class="col-lg-4 titre_article">
+								<a href="https://www.ouest-france.fr/pays-de-la-loire/pontchateau-44160/pontchateau-quelques-places-disponibles-au-club-de-handball-7002325">
+									<p>6 Octobre 2020</p>
+									<h4>Quelques places disponibles au club de handball</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-5 actualites_accueil_deux">
+						<div class="row">
+							<div class="col-lg-5"></div>
+							<div class="col-lg-7 titre_article">
+								<a href="https://www.ouest-france.fr/pays-de-la-loire/pontchateau-44160/pontchateau-les-filles-plus-nombreuses-au-club-de-handball-6588133">
+									<p>30 Ocotbre 2019</p>
+									<h4>Les filles plus nombreuses au club de handball</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2"></div>
+					<div class="col-lg-5 actualites_accueil_trois">
+						<div class="row">
+							<div class="col-lg-5"></div>
+							<div class="col-lg-7 titre_article">
+								<a href="https://www.ouest-france.fr/pays-de-la-loire/pontchateau-44160/pontchateau-tournoi-et-matchs-pour-la-coupe-de-france-au-handball-6661294">
+									<p>19 Décembre 2019</p>
+									<h4>Tournoi et matchs pour la coupe de France au handball</h4>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="separateur"></div>
+
+		<!------------------------------ FOOTER ------------------------------->
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<img src="images/sponsors.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>Rejoignez-nous sur les réseaux !</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-12 icone_reseaux">
+								<a href="https://www.facebook.com/pontchateau.handball/"><i class="fab fa-facebook"></i></a>
+								<a href="https://www.instagram.com/pont_chateau_handball/?hl=fr"><i class="fab fa-instagram"></i></a>
+								<a href="https://www.youtube.com/channel/UCr4XuEzFS4fMU_hoG-CW8kA"><i class="fab fa-youtube"></i></a>
+								<a href="#"><i class="fab fa-twitter"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!------------------------------ SCRYPT ------------------------------->
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	</body>
+</html>

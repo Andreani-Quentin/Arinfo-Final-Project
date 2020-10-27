@@ -1,0 +1,449 @@
+@charset "UTF-8";
+/********************** Fichier SCSS Main **********************/
+/*
+	- Document: Fichier style d'appel
+	- Version: 1.0.0
+	- Author: Andreani Quentin 
+*/
+/*@import "variables.scss";*/
+/*@import "mixins.scss";*/
+body {
+  background-color: #ffffff !important;
+}
+
+/******************************************* NAV *******************************************/
+nav {
+  padding: 3rem 0;
+  background: transparent;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+nav .nav_logo {
+  position: absolute;
+  left: 48%;
+}
+nav .nav_logo img {
+  height: 100px;
+  width: auto;
+}
+nav .nav_link {
+  font-family: Teko;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 100%;
+  color: #fff;
+  display: inline-block;
+  padding: 0.625rem 0.75rem;
+}
+nav a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+/******************************************* HEADER *******************************************/
+header .carousel-item_accueil {
+  height: 60.6rem;
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+header .carousel-control-next {
+  z-index: 99;
+}
+header .carousel-control-prev {
+  z-index: 99;
+}
+header .titre_style {
+  font-family: Anton;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 6rem;
+  overflow: hidden;
+  text-transform: uppercase;
+  color: white;
+}
+header .titre_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  height: 100%;
+}
+header .titre_position {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-right: 300px;
+}
+header .pchb {
+  color: rgba(255, 255, 255, 0.01);
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: red;
+  -webkit-text-stroke-width: 2px;
+  margin-right: -300px;
+  margin-bottom: 100px;
+}
+header .btn_titre {
+  color: red;
+  background-color: black;
+  border: 1.5px solid red;
+  border-radius: 0px;
+  width: 250px;
+  font-family: Teko;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  padding: 17px 15px 13px;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+header .btn:hover {
+  background-color: white;
+  color: red;
+}
+@media (max-width: 768px) {
+  header .titre_position {
+    text-align: left;
+    margin-right: 0px;
+  }
+  header .pchb {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 576px) {
+  header .carousel-item_accueil {
+    height: 51rem;
+  }
+  header .titre_style {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  header .titre_position {
+    text-align: center;
+    margin-bottom: 130px;
+  }
+  header .pchb {
+    margin-right: 0px;
+    font-size: 4rem;
+  }
+}
+
+.h2, .actualites h2, .titre_h2 h2 {
+  font-family: Anton;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.01);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: red;
+  -webkit-text-stroke-width: 1.5px;
+}
+
+/******************************************* IFRAME FACEBOOK MATCH et CALENDRIER *******************************************/
+section {
+  margin-top: 100px;
+}
+
+.background_match iframe {
+  box-shadow: 0px -15px 30px rgba(0, 17, 0, 0.25) !important;
+}
+
+.titre_h2 {
+  text-align: center;
+  overflow: visible;
+}
+.titre_h2 h2:before, .titre_h2 h2:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 6.3rem;
+  height: 1px;
+  background: #000;
+}
+.titre_h2 h2:before {
+  margin-right: 1rem;
+}
+.titre_h2 h2:after {
+  margin-left: 1rem;
+}
+
+.padding_match {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.carousel_match_box {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.carousel_match {
+  height: 350px;
+  width: auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0px -10px 30px rgba(0, 17, 0, 0.25) !important;
+}
+
+.prochains_match {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.prochains_match .date_match {
+  background-color: black;
+  width: 110px;
+  height: 110px;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: -60px;
+}
+.prochains_match .date_match p {
+  color: red;
+  font-size: 1.6rem;
+  font-family: Teko;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.titre_match p {
+  font-family: Teko;
+  font-size: 3rem;
+  font-weight: 500;
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info_match {
+  background-color: black;
+  width: 110px;
+  text-align: center;
+  color: red;
+  font-size: 1.6rem;
+  font-family: Teko;
+  font-weight: 400;
+  padding-top: 5px;
+  margin-bottom: -380px;
+  transition: all 1s ease;
+}
+
+.info_match:hover {
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+}
+
+.btn_prev_match {
+  margin-bottom: -70px;
+  padding-right: 30px;
+}
+.btn_prev_match i {
+  font-size: 4rem;
+  color: red;
+}
+
+.btn_next_match {
+  margin-bottom: -70px;
+  padding-left: 30px;
+}
+.btn_next_match i {
+  font-size: 4rem;
+  color: red;
+}
+
+.classement_box {
+  margin-top: 100px;
+}
+
+/******************************************* COMMUNAUTÉ *******************************************/
+.section_communaute {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../images/image7.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.section_communaute h2 {
+  font-family: Anton;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid red;
+  color: rgba(255, 255, 255, 0.01);
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: red;
+  -webkit-text-stroke-width: 1.5px;
+}
+.section_communaute p {
+  color: white;
+  font-family: Barlow;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.section_communaute .btn_inscrire a {
+  background-color: black;
+  width: 300px;
+  text-align: center;
+  color: red;
+  font-size: 1.6rem;
+  font-family: Teko;
+  font-weight: 400;
+  padding-top: 10px;
+  border-radius: 0px;
+  border: 1px solid red;
+  transition: all 1s ease;
+  text-transform: uppercase;
+}
+.section_communaute .btn_inscrire a:hover {
+  background-color: white;
+  color: red;
+}
+.section_communaute .inscrire_center {
+  text-align: center;
+  margin-top: 30px;
+}
+.section_communaute h3 {
+  font-family: Teko;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+.section_communaute .icone_reseaux {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.section_communaute .icone_reseaux i {
+  color: white;
+  font-size: 3rem;
+  margin-right: 30px;
+  margin-left: 30px;
+  transition: all 1s ease;
+}
+.section_communaute .icone_reseaux i:hover {
+  transform: scale(1.25);
+  color: red;
+}
+
+/******************************************* ACTUALITE *******************************************/
+.actualites h2:before, .actualites h2:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 6.3rem;
+  height: 1px;
+  background: #000;
+}
+.actualites h2:before {
+  margin-right: 1rem;
+}
+.actualites h2:after {
+  margin-left: 1rem;
+}
+.actualites .actualites_accueil_un {
+  background-image: url(../images/babyhand.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 30px;
+}
+.actualites .actualites_accueil_un .titre_article, .actualites .actualites_accueil_un .actualites_accueil_trois {
+  margin-top: 450px;
+  background-color: white;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border-top: 1px solid red;
+  border-left: 1px solid red;
+}
+.actualites .actualites_accueil_un .titre_article h4, .actualites .actualites_accueil_un .actualites_accueil_trois h4 {
+  color: red;
+  font-family: Barlow;
+  transition: all 1s ease;
+}
+.actualites .actualites_accueil_un .titre_article p, .actualites .actualites_accueil_un .actualites_accueil_trois p {
+  font-family: Barlow;
+  color: red;
+  margin-bottom: 0px;
+}
+.actualites .actualites_accueil_un .titre_article a:hover, .actualites .actualites_accueil_un .actualites_accueil_trois a:hover {
+  color: red;
+  text-decoration: none;
+}
+.actualites .actualites_accueil_un .titre_article h4:hover, .actualites .actualites_accueil_un .actualites_accueil_trois h4:hover {
+  transform: scale(1.05);
+}
+.actualites .actualites_accueil_deux, .actualites .actualites_accueil_trois {
+  background-image: url(../images/actualite2.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+  transition: all 1s ease;
+}
+.actualites .actualites_accueil_deux .titre_article, .actualites .actualites_accueil_deux .actualites_accueil_trois, .actualites .actualites_accueil_trois .titre_article, .actualites .actualites_accueil_trois .actualites_accueil_trois {
+  margin-top: 200px;
+  background-color: white;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border-top: 1px solid red;
+  border-left: 1px solid red;
+}
+.actualites .actualites_accueil_deux .titre_article h4, .actualites .actualites_accueil_deux .actualites_accueil_trois h4, .actualites .actualites_accueil_trois .titre_article h4, .actualites .actualites_accueil_trois .actualites_accueil_trois h4 {
+  color: red;
+  font-family: Barlow;
+  font-size: 1.3rem;
+  transition: all 1s ease;
+}
+.actualites .actualites_accueil_deux .titre_article p, .actualites .actualites_accueil_deux .actualites_accueil_trois p, .actualites .actualites_accueil_trois .titre_article p, .actualites .actualites_accueil_trois .actualites_accueil_trois p {
+  font-family: Barlow;
+  color: red;
+  margin-bottom: 0px;
+  font-size: 1rem;
+}
+.actualites .actualites_accueil_deux .titre_article a:hover, .actualites .actualites_accueil_deux .actualites_accueil_trois a:hover, .actualites .actualites_accueil_trois .titre_article a:hover, .actualites .actualites_accueil_trois .actualites_accueil_trois a:hover {
+  color: red;
+  text-decoration: none;
+}
+.actualites .actualites_accueil_deux .titre_article h4:hover, .actualites .actualites_accueil_deux .actualites_accueil_trois h4:hover, .actualites .actualites_accueil_trois .titre_article h4:hover, .actualites .actualites_accueil_trois .actualites_accueil_trois h4:hover {
+  transform: scale(1.05);
+}
+.actualites .actualites_accueil_trois {
+  background-image: url(../images/actualite3.jpeg);
+}
+
+/******************************************* ACTUALITE *******************************************/
+.separateur {
+  height: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-image: url(../images/image6.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/*@import "footer.scss";*/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,332 @@
+.h2 {
+	font-family: Anton;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 3rem;
+		text-transform: uppercase;
+		color: hsla(0,0%,100%,.01);
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-color: red;
+			-webkit-text-stroke-width: 1.5px;
+}
+
+/******************************************* IFRAME FACEBOOK MATCH et CALENDRIER *******************************************/
+
+section {
+	margin-top: 100px;
+}
+
+.background_match {
+	iframe {
+		box-shadow: 0px -15px 30px rgba(0, 17, 0, 0.25)!important
+	}
+}
+
+.titre_h2 {
+	
+	text-align: center;
+	overflow: visible;
+	
+	h2 {
+		@extend .h2;
+	}
+	h2:before, h2:after { 
+		content:'';
+		display: inline-block;
+		vertical-align: middle;
+		width: 6.3rem;
+		height: 1px;
+		background: #000; 
+	}
+	h2:before { 
+		margin-right: 1rem 
+	}
+	h2:after { 
+		margin-left: 1rem 
+	}
+}
+
+.padding_match {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.carousel_match_box {
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+.carousel_match {
+	height: 350px;
+	width: auto;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	background-color: white;
+	box-shadow: 0px -10px 30px rgba(0, 17, 0, 0.25)!important
+}
+
+.prochains_match {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.date_match {
+		background-color: black;
+		width: 110px;
+		height: 110px;
+		text-align: center;
+		padding-top: 20px;
+		margin-top: -60px;
+		p {
+			color: red;
+			font-size: 1.6rem;
+			font-family: Teko;
+			font-weight: 400;
+			margin: 0px;
+		}
+	}
+}
+
+.titre_match {
+	p {
+		font-family: Teko;
+		font-size: 3rem;
+		font-weight: 500;
+		color: red;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+.info_match {
+	background-color: black;
+	width: 110px;
+	text-align: center;
+	color: red;
+	font-size: 1.6rem;
+	font-family: Teko;
+	font-weight: 400;
+	padding-top: 5px;
+	margin-bottom: -380px;
+	transition: all 1s ease;
+}
+.info_match:hover {
+	text-decoration: none;
+	background-color: white;
+	border: 1px solid red;
+	color: red;
+}
+.btn_prev_match {
+	margin-bottom: -70px;
+	padding-right: 30px;
+	i {
+		font-size: 4rem;
+		color: red;
+	}
+}
+.btn_next_match {
+	margin-bottom: -70px;
+	padding-left: 30px;
+	i {
+		font-size: 4rem;
+		color: red;
+	}
+}
+.classement_box {
+	margin-top: 100px;
+}
+
+/******************************************* COMMUNAUTÉ *******************************************/
+
+
+.section_communaute {
+	
+	background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(../images/image7.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+
+	h2 {
+		font-family: Anton;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 3rem;
+		text-transform: uppercase;
+		margin-top: 100px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid red;
+		color: hsla(0,0%,100%,.01);
+			-webkit-text-fill-color: black;
+			-webkit-text-stroke-color: red;
+			-webkit-text-stroke-width: 1.5px;
+	}
+	p {
+		color: white;
+		font-family: Barlow;
+		font-weight: 400;
+		margin-top: 30px;
+		}
+	.btn_inscrire {
+		a {
+			background-color: black;
+			width: 300px;
+			text-align: center;
+			color: red;
+			font-size: 1.6rem;
+			font-family: Teko;
+			font-weight: 400;
+			padding-top: 10px;
+			border-radius: 0px;
+			border: 1px solid red;
+			transition: all 1s ease;
+			text-transform: uppercase;
+		}
+	}
+	.btn_inscrire {
+		a:hover {
+		background-color: white;
+		color: red;
+		}
+	}	
+	.inscrire_center {
+		text-align: center;
+		margin-top: 30px;
+	}
+	h3 {
+		font-family: Teko;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 2rem;
+		text-transform: uppercase;
+		color: white;
+		text-align: center;
+		margin-top: 40px;
+	}
+	.icone_reseaux {
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 100px;
+
+		i {
+			color: white;
+			font-size: 3rem;
+			margin-right: 30px;
+		margin-left: 30px;
+			transition: all 1s ease;
+		}
+		i:hover {
+			transform:scale(1.25);
+			color: red;
+		}
+	}
+}
+
+/******************************************* ACTUALITE *******************************************/
+
+.actualites {
+	h2 {
+		@extend .h2;
+	}
+	h2:before, h2:after { 
+		content:'';
+		display: inline-block;
+		vertical-align: middle;
+		width: 6.3rem; 
+		height: 1px;
+		background: #000; 
+	}
+	h2:before { 
+		margin-right: 1rem 
+	}
+	h2:after { 
+		margin-left: 1rem 
+	}
+	.actualites_accueil_un {
+		background-image: url(../images/babyhand.jpeg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 30px;
+		
+		.titre_article {
+			margin-top: 450px;
+			background-color: white;
+			padding-top: 20px;
+			padding-right: 20px;
+			padding-bottom: 20px;
+			padding-left: 30px;
+			border-top: 1px solid red;
+			border-left: 1px solid red;
+			h4 {
+				color: red;
+				font-family: Barlow;
+				transition: all 1s ease;
+			}
+			p {
+				font-family: Barlow;
+				color: red;
+				margin-bottom: 0px;
+			}
+			a:hover {
+				color: red;;
+				text-decoration: none
+			}
+			h4:hover {
+				transform:scale(1.05);
+			}
+		}
+	}
+
+	.actualites_accueil_deux {
+		background-image: url(../images/actualite2.jpeg);
+		background-size: cover;
+		background-position: center;
+		margin-top: 70px;
+		transition: all 1s ease;
+		.titre_article {
+			margin-top: 200px;
+			background-color: white;
+			padding-top: 20px;
+			padding-right: 20px;
+			padding-bottom: 20px;
+			padding-left: 30px;
+			border-top: 1px solid red;
+			border-left: 1px solid red;
+			h4 {
+				color: red;
+				font-family: Barlow;
+				font-size: 1.3rem;
+				transition: all 1s ease;
+			}
+			p {
+				font-family: Barlow;
+				color: red;
+				margin-bottom: 0px;
+				font-size: 1rem;
+			}
+			a:hover {
+				color: red;;
+				text-decoration: none
+			}
+			h4:hover {
+				transform:scale(1.05);
+			}
+		}
+	}
+
+	.actualites_accueil_trois {
+		@extend .actualites_accueil_deux;
+		background-image: url(../images/actualite3.jpeg);
+		@extend .titre_article;
+	}
+}
+
+/******************************************* ACTUALITE *******************************************/
+
+.separateur {
+	height: 300px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-image: url(../images/image6.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
